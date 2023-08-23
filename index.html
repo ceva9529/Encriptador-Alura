@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es-419">
+    <head>                                       
+        <meta charset="UTF-8">           <!--Diccionario de nuestro lenguaje  / español -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /">  <!-- Esto sirve para que use y adapta la pagina para dispositivos mobiles-->
+        <title>Encriptador de Texto</title>
+        <link rel="shortcut icon" href="img/Escudo.jpg" type="image/x-icon"> <!--Esto sirve para para poner un icono en la parte superior del titulo hasta arriba en las pestañas del navegador-->
+
+        <!--<link rel="stylesheet" href="reset.css"> -->          
+        <!--Resetea todos los estilos del CSS que venga por default y va  SIEMPRE ANTES DEL STYLE.CSS -->
+
+        <link rel="stylesheet" href="styles.css">   <!--El "stylesheet define una hoja de estilos preferida o alternativa href hace la referencia de la hoja de style.css " -->
+        
+        
+        <!--<link rel="preconnect" href="https://fonts.googleapis.com">-->
+        <!--Aqui es para el font de la letra que jala para las letras de google-->
+
+
+        <!--<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
+
+        <!--<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet"> --> <!--Esto es de la fuente de sont de google" -->  
+
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <!--Esto sirve para cambiar el estilo de las alertas-->
+
+    </head>
+
+    <body>  
+        <div class="container">
+            <section class="logo-alura"><img class="logo-alura" src="img/Logo.png"></section>            
+            <div class="encriptar">
+                <textarea
+                 name="texto"   
+                 class="texto"
+                 id="texto"
+                 cols="30"
+                 rows="10" 
+                 placeholder="Ingresa el texto"></textarea> <!--En name es el NOMBRE, El ID es el identificador para acceder con el" -->
+
+                    <div class="terminos">
+                        <p> Solo letras minúsculas y sin acéntos</p>
+                    </div>
+
+                <div class="botones"> <!--La Seccion de los botones de acciones principales" -->
+                     <button class="btn-encriptar" type="button" onclick="encriptar()">  <!--Esto de encriptar() es una funcion" --> 
+                     Encriptar
+                     </button>
+                     <input type="button" 
+                     class="btn-desencriptar" 
+                     value="Desencriptar" 
+                     onclick="desencriptar()"/>
+                </div>
+            </div>
+
+            <div class="encriptado">
+                <img src="img/Muñeco.png" alt="" id="muñeco">
+
+                <div class="mensaje-encriptado" id="mensaje-encriptado">
+                    <h2 id="titulo-mensaje">Ningun mensaje fue encontrado</h2>
+                    <p id="parrafo">Ingresa el texto que deseas encriptar o desencriptar</p>
+                    <!--<textarea name="mensaje" id="mensjae" cols="30" rows="10" class="mensaje"></textarea>-->
+                </div>
+                <div class="icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/cesar.v.aguilar.9"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://www.instagram.com/ceva_29/?hl=es-la"><img src="img/instagram.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/cesar-vazquez-ceva/"><img src="img/linkedin.png"></a></li>
+                    </ul>    
+                </div>         
+            </div>
+            <section class = "redes-sociales">
+                <p>Sigueme en las rede sociales!</p>
+                <div>
+                    <ul>
+                        <li><a href="https://www.facebook.com/cesar.v.aguilar.9"><img src="img/facebook.png"></a></li>
+                        <li><a href="https://www.instagram.com/ceva_29/?hl=es-la"><img src="img/instagram.png"></a></li>
+                        <li><a href="https://www.linkedin.com/in/cesar-vazquez-ceva/"><img src="img/linkedin.png"></a></li>
+                    </ul>    
+                </div>         
+            </section>
+        </div>    
+    </body>
+    <script src="index.js"></script>
+</html>
+
