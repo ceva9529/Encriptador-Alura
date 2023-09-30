@@ -1,57 +1,75 @@
-* {  /* Esto es el selector universal po usamos el asterico */
-    margin: 0;    /* Margen que tiene todo el documento que tiene el html */
-    padding: 0;     /* Espciamiento interno */
+* {
+    /* Esto es el selector universal po usamos el asterico */
+    margin: 0;
+    /* Margen que tiene todo el documento que tiene el html */
+    padding: 0;
+    /* Espciamiento interno */
 }
 
-.container{
+.container {
     position: relative;
-    width: 100vw;  /* 100% del ancho de la pantalla */ 
-    height: 100vh; /* 100% del alto de la pantalla */ 
+    width: 100vw;
+    /* 100% del ancho de la pantalla */
+    height: 100vh;
+    /* 100% del alto de la pantalla */
     background: #f3f5fc;
 }
 
-.logo-alura{
+.logo-alura {
     position: absolute;
     left: 3%;
     top: 2%;
     width: 23%;
 }
 
-.texto{
+.texto {
     position: absolute;
     width: 42%;
     height: 60%;
-    left: 12%;  /* Que tan corrido esta el area del texto de la izquierda a la derecha, como si fuera SANGRUIA */
-    top: 15%; /* Que tan espacioso esta con lo de arriba */
-    border: none;  /* Para quitar los bordes del cuadro de texto */ 
-    font-family: "Inter"; /* Tipo de letras */ 
-    font-style: normal; /* Puede ser en negritas, italicas, etc. */ 
-    font-weight: 400;   /* Peso de la letra, puede ser el grosor */
-    font-size: 30px;    /* El tamaño de la letra */ 
-    line-height: 150%; 
+    left: 12%;
+    /* Que tan corrido esta el area del texto de la izquierda a la derecha, como si fuera SANGRUIA */
+    top: 15%;
+    /* Que tan espacioso esta con lo de arriba */
+    border: none;
+    /* Para quitar los bordes del cuadro de texto */
+    font-family: "Inter";
+    /* Tipo de letras */
+    font-style: normal;
+    /* Puede ser en negritas, italicas, etc. */
+    font-weight: 400;
+    /* Peso de la letra, puede ser el grosor */
+    font-size: 30px;
+    /* El tamaño de la letra */
+    line-height: 150%;
     background-color: #f3f5fc;
 }
 
-.texto::placeholder{
-    color: #0A3871; /*Color del placeholder el texto de ayuda*/         
+.texto::placeholder {
+    color: #0A3871;
+    /*Color del placeholder el texto de ayuda*/
 }
 
 .texto:focus,
-.texto:active{
+.texto:active {
     border: none;
-    outline: none; /*Focus es cuando pones el cursor en cuadro de texto, es diferente  cuando esta activo en eso usamos el .texto.active*/
+    outline: none;
+    /*Focus es cuando pones el cursor en cuadro de texto, es diferente  cuando esta activo en eso usamos el .texto.active*/
 }
 
-.terminos{
-    display: flex; /*Para que se mueva*/
-    flex-direction: row; /* La direccion del flex, ROW es para tipo fila */
+.terminos {
+    display: flex;
+    /*Para que se mueva*/
+    flex-direction: row;
+    /* La direccion del flex, ROW es para tipo fila */
     align-items: center;
-    padding: 0px; 
-    gap: 8px; /* Espaciamiento interno que tiene los elementos flexibles */
+    padding: 0px;
+    gap: 8px;
+    /* Espaciamiento interno que tiene los elementos flexibles */
     position: absolute;
-    width: 80%; 
+    width: 80%;
     left: 12%;
-    top: 80%; /*80% es como la posicion que va llegar hasta abajo del 100% */
+    top: 80%;
+    /*80% es como la posicion que va llegar hasta abajo del 100% */
 }
 
 .terminos p {
@@ -78,9 +96,10 @@
     top: 82%;
 }
 
-.btn-encriptar{
+.btn-encriptar {
     align-items: center;
-    justify-content: center; /*Contenido se justifique*/
+    justify-content: center;
+    /*Contenido se justifique*/
     padding: 2%;
     gap: 8px;
     width: 25%;
@@ -88,13 +107,14 @@
     border-radius: 24px;
     font-family: "Inter";
     font-size: 18px;
-    line-height: 19px ; /*Ancho de linea*/
+    line-height: 19px;
+    /*Ancho de linea*/
     text-align: center;
     color: #ffffff;
     margin-right: 10px;
 }
 
-.btn-desencriptar{
+.btn-desencriptar {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -109,41 +129,66 @@
     font-family: "Inter";
     font-weight: 400;
     font-size: 18px;
-    line-height: 19px ; /*Ancho de linea*/
+    line-height: 19px;
+    /*Ancho de linea*/
     text-align: center;
     color: #ffffff;
-    color: #0A3871; 
+    color: #0A3871;
     margin-left: 10px;
 }
 
-.btn-desencriptar:hover, 
-.btn-encriptar:hover{
+.btn-desencriptar:hover,
+.btn-encriptar:hover {
     margin: 0.3%;
     width: 24.5%;
     padding: 1.8%;
 }
 
-.encriptado{
+.encriptado {
     display: flex;
     justify-content: center;
     position: absolute;
-    width: 25%; /*El ancho de la caja*/
+    width: 25%;
+    /*El ancho de la caja*/
     height: 75%;
     left: 65%;
     top: 7%;
     background: #ffffff;
-    box-shadow: 0px 24px 32px -8px rgba(0,0,0,0.08);
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
     border-radius: 32px;
 }
 
-.encriptado img{
+.redes-sociales {
+    margin-left: 25%;
+}
+
+.redes-sociales p {
+    font-size: 18px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-style: italic;
+    text-align: left;
+    margin-bottom: 2%;
+}
+
+table thead {
+    margin-top: 5%;
+    text-align: left;
+}
+
+table th {
+    padding-right: 30px;
+    text-align: left;
+    margin-left: auto;
+}
+
+.encriptado img {
     position: absolute;
     width: 80%;
     height: 50%;
     top: 15%;
 }
 
-.mensaje-encriptado{
+.mensaje-encriptado {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +201,7 @@
     text-align: center;
 }
 
-.mensaje-encriptado h2{
+.mensaje-encriptado h2 {
     width: 60%;
     font-family: "Inter";
     font-style: normal;
@@ -167,7 +212,7 @@
     color: #345779;
 }
 
-.mensaje-encriptado p{
+.mensaje-encriptado p {
     width: 80%;
     font-family: "Inter";
     font-style: normal;
@@ -178,87 +223,84 @@
     color: #4c4d50;
 }
 
-.redes-sociales ul{
-    margin-bottom: 3%;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    font-size: 15px;
-    font-family: "Cambria";
-    font-style: italic;
-    color: #345779;
-    left: 72%;
-    top:83%;
-    
-}
-
-.redes-sociales img{
-    position:relative;
+.redes-sociales img {
+    position: static;
     flex-direction: row;
     display: flex;
     width: 22px;
-    left: 78%;
+    left: 50px;
     top: 88%;
+    padding: 20%;
 }
 
-.icons{
-    list-style: none;
-    display: flex;
-}
-.icons img{
-     width: 20px;
-     height: 20px;
+.redes-sociales img {
+    width: 40px;
+    height: 40px;
 }
 
 
 /* Responsive Design  (para que se adapate a los distintos dispositivos)*/
+/*Para que se adapate a los cambios se tiene que hacertogle divice bas */
 
-@media (max-width: 57.5em){
-    .container{
+@media (max-width: 57.5em) {
+    .container {
         display: flex;
         flex-direction: row;
     }
-    .encriptar{
+
+    .encriptar {
         width: 100%;
     }
-    .texto{
+
+    .texto {
         width: 80%;
         height: 60%;
         top: 5%;
     }
-    .terminos{
+
+    .terminos {
         width: 80%;
         left: 10%;
         top: 67%;
     }
-    .terminos p{
-        font-size: 16px;
+
+    .terminos p {
+        font-size: 13px;
     }
-    .botones{
+
+    .botones {
+        text-align: center;
         width: 80%;
         left: 10%;
         top: 70%;
     }
-    .btn-encriptar, .btn-desencriptar{
-        width: 48%;
-        border-radius: 16px;
+
+    .btn-encriptar,
+    .btn-desencriptar {
+        width: 80%;
+        border-radius: 15px;
     }
-    .btn-encriptar:hover,.btn-desencriptar:hover{
-        margin: 0.3%;
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover {
+        margin: 0.7%;
         width: 47.5%;
         padding: 1.8%;
     }
-    .encriptado{
+
+    .encriptado {
         width: 80%;
         height: 15%;
         left: 10%;
         top: 80%;
     }
-    .mensaje-encriptado{
+
+    .mensaje-encriptado {
         width: 100%;
         top: 5%;
     }
-    .encriptado img{
+
+    .encriptado img {
         top: 0;
         display: none;
         visibility: hidden;
